@@ -15,7 +15,6 @@ const log = message => {
   console.log(` ${message}`);
 };
 
-client.on("ready", () => console.log("Bot Aktif"));
 client.on("warn", console.warn);
 client.on("error", console.error);
 
