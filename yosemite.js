@@ -15,9 +15,6 @@ const log = message => {
   console.log(` ${message}`);
 };
 
-client.on("warn", console.warn);
-client.on("error", console.error);
-
 client.on("message", async message => {
     if (message.author.bot || !message.guild) return;
     if (message.content.indexOf(prefix) !== 0) return;
