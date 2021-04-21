@@ -8,7 +8,7 @@ const prefix = "" //prefix
 const token = "" //bot token
 
 client.on('ready', async () => {
- client.user.setActivity(`yosemitee`, { type:'PLAYING' })
+ client.user.setActivity(`Yosemite YouTube Together`, { type:'PLAYING' })
 });
 
 const log = message => {
@@ -45,12 +45,8 @@ if (!channel.permissionsFor(message.guild.me).has("CREATE_INSTANT_INVITE")) retu
         })
             .then(res => res.json())
             .then(invite => {
-                if (invite.error || !invite.code) return message.channel.send(`**Youtube Together** Başlatılamadı!`);
                 message.channel.send(new Discord.MessageEmbed().setAuthor(message.author.tag, message.author.avatarURL({dynamic: true, size: 1024})).setColor("RANDOM").setDescription(`**${channel.name}** kanalında **YouTube** uygulamasını başlatmak için [buraya](<https://discord.gg/${invite.code}>) tıklamalısın.`).setFooter("Yosemite"));
-            })
-            .catch(e => {
-                message.channel.send(`**YouTube Together** Başlatılamadı!`);
-            })
+            }).catch(e => { message.channel.send(`**YouTube Together** Başlatılamadı!`); })
     }
 });
 
