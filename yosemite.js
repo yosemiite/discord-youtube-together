@@ -42,11 +42,9 @@ if (!channel.permissionsFor(message.guild.me).has("CREATE_INSTANT_INVITE")) retu
                 "Authorization": `Bot ${client.token}`,
                 "Content-Type": "application/json"
             }
-        })
-            .then(res => res.json())
-            .then(invite => {
+        }).then(res => res.json()).then(invite => {
                 message.channel.send(new Discord.MessageEmbed().setAuthor(message.author.tag, message.author.avatarURL({dynamic: true, size: 1024})).setColor("RANDOM").setDescription(`**${channel.name}** kanalında **YouTube** uygulamasını başlatmak için [buraya](<https://discord.gg/${invite.code}>) tıklamalısın.`).setFooter("Yosemite"));
-            }).catch(e => { message.channel.send(`**YouTube Together** Başlatılamadı!`); })
+            }).catch(e => { message.channel.send(`**YouTube Together** Başlatılamadı! | Hata Kodu: ${e}`); })
     }
 });
 
