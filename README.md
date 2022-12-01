@@ -3,7 +3,7 @@
 
 * Botu indirip kurun.
 * Konsolu açarak `npm i` yazın ve gerekli modüllerin kurulmasını bekleyin.
-* `ewre.js` adlı dosyanın içerisindeki `prefix` ve `token` yerlerini doldurunuz. (Eksik Bırakmayın!)
+* `yosemite.js` adlı dosyanın içerisindeki `prefix` ve `token` yerlerini doldurunuz. (Eksik Bırakmayın!)
 * Bot kullanım şekli `play <KANAL ID>` şeklindedir, her şeyi ayarladıktan sonra bu şekilde kullanabilirsiniz.
 
 ### Eğer bot ile ilgili bir sorununuz olursa aşağıdaki tuş yardımıyla bana ulaşabilirsiniz.
