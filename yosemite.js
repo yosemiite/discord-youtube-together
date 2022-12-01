@@ -8,7 +8,7 @@ const prefix = "" //prefix
 const token = "" //bot token
 
 client.on('ready', async () => {
- client.user.setActivity(`Ewre YouTube Together Bot`, { type:'PLAYING' })
+ client.user.setActivity(`Yosemite YouTube Together Bot`, { type:'PLAYING' })
 });
 
 const log = message => {
